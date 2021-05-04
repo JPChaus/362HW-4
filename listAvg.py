@@ -2,8 +2,7 @@ def main():
     list_length = uInput("How big do you want the list? Positive integer value only: ", 1)
     my_list = []
     for i in range(0, list_length):
-        num = uInput("Enter a number to add to the list. Integer value only: ", 0)
-        my_list.append(num)
+        my_list.insert(i, uInput("Enter a number to add to the list. Integer value only: ", 0))
     answer = calculateAvg(my_list)
     print("Average of the list: ", answer)
 
